@@ -1,19 +1,17 @@
 from django.conf.urls import include
-
 from django.urls import path
-
 from rest_framework.routers import DefaultRouter
 
 from .routers import CustomWithoutUpdateRouter
 
-from .views import (UserViewSet,
+from .views import (CategoriesViewSet,
+                    CommentViewSet,
+                    UserViewSet,
+                    GenresViewSet,
                     get_token,
                     signup,
-                    CategoriesViewSet,
-                    GenresViewSet,
-                    TitlesViewSet,
                     ReviewViewSet,
-                    CommentViewSet
+                    TitlesViewSet,
                     )
 
 router = DefaultRouter()
