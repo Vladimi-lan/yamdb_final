@@ -13,6 +13,7 @@ from .views import (CategoriesViewSet,
                     TitlesViewSet
                     )
 
+
 router = DefaultRouter()
 custom_router = CustomWithoutUpdateRouter()
 custom_router.register('users', UserViewSet, basename='users')
