@@ -4,7 +4,8 @@ from rest_framework.routers import DefaultRouter
 
 from .routers import CustomWithoutUpdateRouter
 from .views import (CategoriesViewSet, CommentViewSet, GenresViewSet,
-                    ReviewViewSet, TitlesViewSet, get_token, signup)
+                    ReviewViewSet, TitlesViewSet, UserViewSet, get_token,
+                    signup)
 
 router = DefaultRouter()
 custom_router = CustomWithoutUpdateRouter()
