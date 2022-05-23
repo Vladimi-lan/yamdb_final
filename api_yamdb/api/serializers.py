@@ -2,10 +2,10 @@ from django.contrib.auth.tokens import default_token_generator
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from rest_framework import serializers
-from api_yamdb.settings import MAX_SCORE, MIN_SCORE
 from reviews.models import Category, Comment, Genre, Review, Title
 from users.models import User
-from api_yamdb.settings import ME
+
+from api_yamdb.settings import MAX_SCORE, ME, MIN_SCORE
 
 
 class UserSerializer(serializers.ModelSerializer):
