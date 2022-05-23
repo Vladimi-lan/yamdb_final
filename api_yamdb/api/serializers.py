@@ -15,9 +15,9 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
 
     def save(self):
-        if self.instance is not None \
-                and self.context['request'].parser_context['kwargs']\
-                .get('username') == ME and self.instance.is_user:
+        if (self.instance is not None
+            and self.context['request'].parser_context['kwargs'].get(
+                'username') == ME and self.instance.is_user):
             return super().save(role='user')
         super().save()
 
