@@ -1,10 +1,10 @@
 from datetime import datetime
 
-from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
+from django.db import models
+from users.models import User
 
 from api_yamdb.settings import MAX_SCORE, MIN_SCORE
-from users.models import User
 
 
 def get_year():
