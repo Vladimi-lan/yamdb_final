@@ -1,5 +1,6 @@
-from api_yamdb.settings import ME
 from rest_framework import exceptions, permissions
+
+from api_yamdb.settings import ME
 
 
 class UserPermissions(permissions.BasePermission):
