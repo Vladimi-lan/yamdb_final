@@ -3,16 +3,8 @@ from django.urls import path
 from rest_framework.routers import DefaultRouter
 
 from .routers import CustomWithoutUpdateRouter
-from .views import (CategoriesViewSet,
-                    CommentViewSet,
-                    UserViewSet,
-                    GenresViewSet,
-                    get_token,
-                    signup,
-                    ReviewViewSet,
-                    TitlesViewSet
-                    )
-
+from .views import (CategoriesViewSet, CommentViewSet, GenresViewSet,
+                    ReviewViewSet, TitlesViewSet, get_token, signup)
 
 router = DefaultRouter()
 custom_router = CustomWithoutUpdateRouter()
