@@ -57,6 +57,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }} 
         script: |          
+            sudo docker compose pull vladimirdevpy/yamdb
             sudo docker compose stop
             sudo docker compose rm web
             touch .env
