@@ -1,6 +1,7 @@
 # yamdb_final project
 
 ![example workflow](https://github.com/Vladimi-lan/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+<<<<<<< HEAD
 
 Project with titles, scores, and reviews for it. Auth by jwt.
 Packed in Docker containers.
@@ -72,3 +73,5 @@ Done!
 ```sh
 127.0.0.1:8000/redoc/
 ```
+=======
+>>>>>>> 5bfa0c014c6cdff880bafe423de0cceb8ed0406e
